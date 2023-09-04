@@ -1,0 +1,117 @@
+#intro {
+  height: calc(100vh- 4rem);
+  width: 100vw;
+  max-width: 70rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+
+  top: 6rem;
+  right: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: 55vh;
+  border-radius: 1rem;
+}
+
+.introContent {
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello {
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+.introName {
+  position: absolute;
+  transform: translate(0%, -50%);
+  color: transparent;
+  -webkit-text-stroke: 2px #e952af;
+}
+.introName1 {
+  position: absolute;
+  transform: translate(0%, -50%);
+  color: #e952af;
+  animation: animate 4s ease-in-out infinite;
+}
+h3 {
+  display: none;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.introPara {
+  font-size: medium;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.btn {
+  background: white;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+}
+
+.btnImg {
+  object-fit: cover;
+  margin: 0 0.25rem;
+  height: 1rem;
+}
+
+@media screen and (max-width: 840px) {
+  .introContent {
+    font-size: 10vw;
+  }
+  .hello {
+    font-size: 4.5vw;
+  }
+  h3 {
+    display: block;
+  }
+  .introName,
+  .introName1 {
+    display: none;
+  }
+}
