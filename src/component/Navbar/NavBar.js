@@ -1,67 +1,62 @@
 import "./navbar.css";
 import { Link } from "react-scroll";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import contactImg from "../../assets/contact.png";
 
 const NavBar = () => {
+  const navigate = useNavigate();
   return (
     <nav className="navbar">
       <div className="desktopMenu">
-        <Link
+        <NavLink
           activeClass="active"
           spy={true}
           smooth={true}
           offset={-100}
           duration={500}
-          to="intro"
+          to="/"
           className="desktopMenuListItem"
         >
           Home
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           activeClass="active"
           spy={true}
           smooth={true}
           offset={-100}
           duration={500}
-          to="skills"
+          to="/about"
           className="desktopMenuListItem"
         >
           About
-        </Link>
+        </NavLink>
 
-        <Link
+        <NavLink
           activeClass="active"
           spy={true}
           smooth={true}
           offset={-100}
           duration={500}
-          to="works"
+          to="/portfolio"
           className="desktopMenuListItem"
         >
           Portfolio
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           activeClass="active"
           spy={true}
           smooth={true}
           offset={-100}
           duration={500}
-          to="contact"
+          to="/contact"
           className="desktopMenuListItem"
         >
           Contact
-        </Link>
+        </NavLink>
       </div>
-      <button
-        className="desktopMenuBtn"
-        onClick={() => {
-          document
-            .getElementById("contact")
-            .scrollIntoView({ behavior: "smooth" });
-        }}
-      >
+
+      <button className="desktopMenuBtn" onClick={() => navigate("/contact")}>
         <img src={contactImg} alt="" className="desktopMenuImg" /> Contact Me
       </button>
     </nav>

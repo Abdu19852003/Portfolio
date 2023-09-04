@@ -1,10 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import bg from "../../../assets/abdu.jpeg";
 import btnImg from "../../../assets/hireme.png";
 import "./intro.css";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Intro = () => {
+  const navigate = useNavigate;
   return (
     <section id="intro">
       <div className="introContent">
@@ -19,12 +21,19 @@ const Intro = () => {
           I am skilled web designer with experience in creating <br /> appealing
           and user-friendly websites.
         </p>
-        <Link to="/about">
-          <button className="btn">
+        <NavLink to="/about">
+          <button
+            className="btn"
+            onClick={() => {
+              document
+                .getElementById("skills")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             <img src={btnImg} alt="Hire Me" className="btnImg" />
             Hire Me
           </button>
-        </Link>
+        </NavLink>
       </div>
       <img src={bg} alt="bg" className="bg" width={"400px"} />
     </section>

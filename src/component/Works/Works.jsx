@@ -6,8 +6,10 @@ import POrtfolio4 from "../../assets/project5.png";
 import POrtfolio5 from "../../assets/portfolio-5.png";
 import POrtfolio6 from "../../assets/portfolio-6.png";
 import { Link } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Works = () => {
+  const navigate = useNavigate();
   return (
     <section id="works">
       <h2 className="workstitle"> My Portfolio</h2>
@@ -18,49 +20,20 @@ const Works = () => {
         online presence{" "}
       </span>
       <div className="worksImgs">
-        <div className="worksImgContainer">
-          <img src={POrtfolio4} alt="1" className="worksImg" />
-          <div className="worksImgText">
-            Restaurant-Website : <br />
-            HTML CSS{" "}
-          </div>
-        </div>
+        <img src={POrtfolio4} alt="1" className="worksImg" />
 
-        <div className="worksImgContainer">
-          <img src={POrtfolio2} alt="1" className="worksImg" />
-          <div className="worksImgText">
-            {" "}
-            Generator : <br />
-            HTML CSS JAVASCRIPT{" "}
-          </div>
-        </div>
-        <div className="worksImgContainer">
-          <img src={POrtfolio3} alt="1" className="worksImg" />
-          <div className="worksImgText">
-            Movies : <br />
-            React.js CSS
-          </div>
-        </div>
-        <div className="worksImgContainer">
-          <Link to="https://github.com/Abdu19852003/Enjoy-Your-Movie">
-            <img src={POrtfolio1} alt="1" className="worksImg" />
-          </Link>
-          <div className="worksImgText">
-            Couter : <br /> JavaScript CSS
-          </div>
-        </div>
-        <div className="worksImgContainer">
-          <img src={POrtfolio5} alt="1" className="worksImg" />
-          <div className="worksImgText">Hello, I am Image 1</div>
-        </div>
-        <div className="worksImgContainer">
-          <img src={POrtfolio6} alt="1" className="worksImg" />
-          <div className="worksImgText">Hello, I am Image 1</div>
-        </div>
+        <img src={POrtfolio2} alt="1" className="worksImg" />
+
+        <img src={POrtfolio3} alt="1" className="worksImg" />
+
+        <Link to="https://github.com/Abdu19852003/Enjoy-Your-Movie">
+          <img src={POrtfolio1} alt="1" className="worksImg" />
+        </Link>
       </div>
-      <Link to="/portfolio">
-        <button className="worksBtn">See More</button>
-      </Link>
+
+      <button className="worksBtn" onClick={() => navigate("/portfolio")}>
+        See More
+      </button>
     </section>
   );
 };
