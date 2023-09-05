@@ -1,12 +1,7 @@
 import "./contact.css";
-import walmart from "../../assets/walmart.png";
-import Adobe from "./../../assets/adobe.png";
-import Microsoft from "../../assets/microsoft.png";
-import Facebook from "../../assets/facebook.png";
-import FacebookIcon from "../../assets/facebook-icon.png";
-import TwitterIcon from "../../assets/twitter.png";
-import YoutubeIcon from "../../assets/youtube.png";
-import InstagramIcon from "../../assets/instagram.png";
+
+import Github from "../../assets/github.png";
+import Indeed from "../../assets/indeed.png";
 
 const Contact = () => {
   return (
@@ -30,10 +25,8 @@ const Contact = () => {
             Submit
           </button>
           <div className="links">
-            <img src={FacebookIcon} alt="Facebook" className="link" />
-            <img src={TwitterIcon} alt="Twitter" className="link" />
-            <img src={YoutubeIcon} alt="Youtube" className="link" />
-            <img src={InstagramIcon} alt="Instagram" className="link" />
+            <img src={Indeed} alt="Indeed" className="link" />
+            <img src={Github} alt="Github" className="link" />
           </div>
         </form>
       </div>

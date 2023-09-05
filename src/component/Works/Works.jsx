@@ -20,20 +20,35 @@ const Works = () => {
         online presence{" "}
       </span>
       <div className="worksImgs">
-        <img src={POrtfolio4} alt="1" className="worksImg" />
+        <div className="worksImgContainer">
+          <Link to="https://github.com/kind-boys/Team-projects">
+            <img src={POrtfolio4} alt="1" className="worksImg" />
+          </Link>
+          <div className="worksImgText">Restaurant-Website</div>
+        </div>
+        <div className="worksImgContainer">
+          <Link to="https://github.com/Abdu19852003/JavaScript-Quote-Generator">
+            <img src={POrtfolio2} alt="1" className="worksImg" />
+          </Link>
+          <div className="worksImgText">Quote-Generator</div>
+        </div>
 
-        <img src={POrtfolio2} alt="1" className="worksImg" />
-
-        <img src={POrtfolio3} alt="1" className="worksImg" />
-
-        <Link to="https://github.com/Abdu19852003/Enjoy-Your-Movie">
-          <img src={POrtfolio1} alt="1" className="worksImg" />
-        </Link>
+        <div className="worksImgContainer">
+          <Link to="https://github.com/Abdu19852003/Enjoy-Your-Movie">
+            <img src={POrtfolio3} alt="1" className="worksImg" />
+          </Link>
+          <div className="worksImgText">Movie App</div>
+        </div>
+        <div className="worksImgContainer">
+          <Link to="https://github.com/Abdu19852003/react-counter">
+            <img src={POrtfolio1} alt="1" className="worksImg" />
+          </Link>
+          <div className="worksImgText">Counter App</div>
+        </div>
       </div>
-
-      <button className="worksBtn" onClick={() => navigate("/portfolio")}>
-        See More
-      </button>
+      <NavLink to="https://github.com/Abdu19852003?tab=repositories">
+        <button className="worksBtn">See More</button>
+      </NavLink>
     </section>
   );
 };

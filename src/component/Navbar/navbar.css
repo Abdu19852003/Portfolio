@@ -48,5 +48,5 @@
 .active {
   color: #e952af;
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid #e952af;
+  border-bottom: 3px solid;
 }

@@ -18,13 +18,10 @@
   font-weight: 300;
   font-size: 1rem;
   max-width: 45rem;
+  margin-bottom: 1rem;
 }
 
 .worksImgs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   width: 100vw;
   max-width: 65rem;
 }
@@ -32,17 +29,29 @@
   object-fit: cover;
   height: 20rem;
   margin: 0.5rem;
+  width: 20rem;
+  cursor: pointer;
 
   border-radius: 1rem;
+}
+
+.worksImg:hover {
+  scale: 1.1;
+  opacity: 1;
+}
+
+.worksImg:hover::after {
+  content: "hallo";
 }
 
 .worksImgContainer {
   position: relative;
   display: inline-block;
-  height: 20rem;
-  width: 18rem;
+
   border-radius: 1rem;
-  margin: 0.5rem;
+  margin: 1rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 /* Stile für den Text, der standardmäßig ausgeblendet ist */
@@ -55,6 +64,9 @@
   transition: opacity 0.3s ease-in-out;
   color: #e952af;
   font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 1rem;
+  width: 15rem;
 }
 
 /* Stile für das Bild beim Hovern */

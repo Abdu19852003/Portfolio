@@ -4,6 +4,7 @@ import bg from "../../../assets/abdu.jpeg";
 import btnImg from "../../../assets/hireme.png";
 import "./intro.css";
 import { NavLink, useNavigate } from "react-router-dom";
+import iconSVg from "../../../assets/developerActivity.svg";
 
 const Intro = () => {
   const navigate = useNavigate;
