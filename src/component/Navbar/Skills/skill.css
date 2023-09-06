@@ -1,6 +1,6 @@
 #skills {
   overflow: hidden;
-  width: 200vw;
+  width: 100vw;
   max-width: 65rem;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,6 @@
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-  height: 100vh;
 }
 
 .skillTitle {

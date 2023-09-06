@@ -4,14 +4,22 @@ import bg from "../../../assets/abdu.jpeg";
 import btnImg from "../../../assets/hireme.png";
 import "./intro.css";
 import { NavLink, useNavigate } from "react-router-dom";
-import iconSVg from "../../../assets/developerActivity.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Intro = () => {
   const navigate = useNavigate;
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <section id="intro">
       <div className="introContent">
-        <span className="hello">hello,</span>
+        <span className="hello" data-aos="fade-up">
+          hello,
+        </span>
         <span className="introText">I'm </span>
         <h2 className="introName">Abderrazak</h2>
         <h2 className="introName1">Abderrazak</h2>

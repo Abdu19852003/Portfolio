@@ -37,12 +37,12 @@
   position: absolute;
   transform: translate(0%, -50%);
   color: transparent;
-  -webkit-text-stroke: 2px #15e6cd;
+  -webkit-text-stroke: 2px #e952af;
 }
 .introName1 {
   position: absolute;
   transform: translate(0%, -50%);
-  color: #15e6cd;
+  color: #e952af;
   animation: animate 4s ease-in-out infinite;
 }
 h3 {
@@ -106,10 +106,11 @@ h3 {
   }
   .hello {
     font-size: 4.5vw;
+    color: yellow;
   }
   h3 {
     display: block;
-    color: #15e6cd;
+    color: #e952af;
   }
   .introName,
   .introName1 {
