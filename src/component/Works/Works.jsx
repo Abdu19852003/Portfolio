@@ -47,7 +47,7 @@ const Works = () => {
         </div>
       </div>
       <NavLink to="https://github.com/Abdu19852003?tab=repositories">
-        <button className="worksBtn">See More</button>
+        <button className="worksBtn">See More on GitHub</button>
       </NavLink>
     </section>
   );

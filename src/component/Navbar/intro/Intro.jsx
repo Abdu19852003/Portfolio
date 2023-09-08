@@ -30,8 +30,8 @@ const Intro = () => {
         <h3>Abdu</h3>
         Front-End Developer
         <p className="introPara">
-          I am skilled web designer with experience in creating <br /> appealing
-          and user-friendly websites.
+          I code beautifully simple things, I love what I do,
+          <br /> and enjoy bringing ideas to life in the browser.
         </p>
         <NavLink to="/about">
           <button className="btn">

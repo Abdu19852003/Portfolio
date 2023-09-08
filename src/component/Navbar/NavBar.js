@@ -39,7 +39,7 @@ const NavBar = () => {
           to="/contact"
           className="desktopMenuListItem"
         >
-          Contact
+          Say Hello
         </NavLink>
       </div>
 
