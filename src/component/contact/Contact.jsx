@@ -2,8 +2,30 @@ import "./contact.css";
 
 import Github from "../../assets/github.png";
 import Indeed from "../../assets/indeed.png";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_80y0kcl",
+        "template_obdpp7f",
+        form.current,
+        "M-wTTaTLjzrBtDHsy35xW"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <section id="contactPage">
       <div id="contact">
@@ -12,9 +34,19 @@ const Contact = () => {
           {" "}
           Please fill out the form below to discuss any work opportunities.
         </span>
-        <form className="contactForm">
-          <input type="text" className="name" placeholder="Your Name" />
-          <input type="email" className="email" placeholder="Your Email" />
+        <form className="contactForm" ref={form} onSubmit={sendEmail}>
+          <input
+            type="text"
+            className="name"
+            placeholder="Your Name"
+            name="your_name"
+          />
+          <input
+            type="email"
+            className="email"
+            placeholder="Your Email"
+            name="your_email"
+          />
           <textarea
             className="msg"
             name="message"

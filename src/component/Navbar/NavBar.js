@@ -3,31 +3,24 @@ import "./navbar.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import contactImg from "../../assets/contact.png";
 import menu from "../../assets/menu.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import FileSaver from "file-saver";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const navigate = useNavigate();
+
+  const handelPdf = () => {
+    FileSaver.saveAs(process.env.PUBLIC_URL + "/abdul.pdf", "Lebenslauf.pdf");
+  };
   return (
     <nav className="navbar">
       <div className="desktopMenu">
-        <NavLink
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-          to="/"
-          className="desktopMenuListItem"
-        >
+        <NavLink activeClass="active" to="/" className="desktopMenuListItem">
           Home
         </NavLink>
         <NavLink
           activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
           to="/about"
           className="desktopMenuListItem"
         >
@@ -36,10 +29,6 @@ const NavBar = () => {
 
         <NavLink
           activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
           to="/portfolio"
           className="desktopMenuListItem"
         >
@@ -47,10 +36,6 @@ const NavBar = () => {
         </NavLink>
         <NavLink
           activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
           to="/contact"
           className="desktopMenuListItem"
         >
@@ -58,8 +43,8 @@ const NavBar = () => {
         </NavLink>
       </div>
 
-      <button className="desktopMenuBtn" onClick={() => navigate("/contact")}>
-        <img src={contactImg} alt="" className="desktopMenuImg" /> Contact Me
+      <button className="desktopMenuBtn" onClick={handelPdf}>
+        Download CV
       </button>
       <img
         src={menu}

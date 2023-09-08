@@ -19,21 +19,37 @@ const Skill = () => {
           <img src={UIDesign} alt="UIDesign" className="skillBarImg" />
           <div className="skillBarText">
             <h2>UI/UX design</h2>
-            <p> This is a demo text ,you can write your own content here </p>
+            <p>
+              {" "}
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              corrupti nemo, neque suscipit atque esse similique molestiae odio
+              nesciunt eos natus quae magnam, quasi ut facilis quod, architecto
+              consequuntur deserunt!{" "}
+            </p>
           </div>
         </div>
         <div className="skillBar">
           <img src={WebDesign} alt="WebDesign" className="skillBarImg" />
           <div className="skillBarText">
             <h2>Website design </h2>
-            <p>This is a demo text ,you can write your own content here </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              corrupti nemo, neque suscipit atque esse similique molestiae odio
+              nesciunt eos natus quae magnam, quasi ut facilis quod, architecto
+              consequuntur deserunt!
+            </p>
           </div>
         </div>
         <div className="skillBar">
           <img src={AppDesign} alt="AppDesign" className="skillBarImg" />
           <div className="skillBarText">
             <h2>App design </h2>
-            <p>This is a demo text ,you can write your own content here </p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              corrupti nemo, neque suscipit atque esse similique molestiae odio
+              nesciunt eos natus quae magnam, quasi ut facilis quod, architecto
+              consequuntur deserunt!
+            </p>
           </div>
         </div>
       </div>

@@ -10,12 +10,17 @@
 .bg {
   position: absolute;
 
-  top: 1rem;
+  top: 4rem;
   right: 0;
   z-index: -1;
   object-fit: cover;
   height: 60vh;
   border-radius: 1rem;
+  opacity: 0.8;
+}
+.bg:hover {
+  opacity: 1;
+  scale: 1.2;
 }
 
 .introContent {
@@ -86,12 +91,17 @@ h3 {
   letter-spacing: 1px;
 }
 
-.btn {
+.btn,
+.pdfBtn {
   background: white;
-  margin: 1rem 0;
+  margin: 1rem 0.5rem;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 2rem;
+  cursor: pointer;
+}
+.pdfBtn {
+  background: #e952af;
 }
 
 .btnImg {
@@ -104,16 +114,26 @@ h3 {
   .introContent {
     font-size: 10vw;
   }
+  .bg {
+    display: none;
+  }
+
   .hello {
     font-size: 4.5vw;
-    color: yellow;
   }
   h3 {
     display: block;
-    color: #e952af;
   }
   .introName,
   .introName1 {
     display: none;
+  }
+  .introPara {
+    color: yellow;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .pdfBtn {
+    background-color: yellow;
   }
 }
