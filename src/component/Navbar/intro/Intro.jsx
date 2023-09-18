@@ -22,7 +22,7 @@ const Intro = () => {
   return (
     <section id="intro">
       <div className="introContent">
-        <span className="hello">hello,</span>
+        <span className="hello">👋hello, </span>
         <span className="introText">I'm </span>
         <br />
         <h2 className="introName">Abderrazak</h2>
