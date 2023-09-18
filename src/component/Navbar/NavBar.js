@@ -55,10 +55,6 @@ const NavBar = () => {
       <div className="navMenu" style={{ display: showMenu ? "flex" : "none" }}>
         <NavLink
           activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
           to="/"
           className="listItem"
           onClick={() => setShowMenu(false)}
@@ -67,10 +63,6 @@ const NavBar = () => {
         </NavLink>
         <NavLink
           activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
           to="/about"
           className="listItem"
           onClick={() => setShowMenu(false)}
@@ -80,10 +72,6 @@ const NavBar = () => {
 
         <NavLink
           activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
           to="/portfolio"
           className="listItem"
           onClick={() => setShowMenu(false)}
@@ -92,10 +80,6 @@ const NavBar = () => {
         </NavLink>
         <NavLink
           activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
           to="/contact"
           className="listItem"
           onClick={() => setShowMenu(false)}
