@@ -8,47 +8,25 @@ const Skill = () => {
     <section id="skills">
       <span className="skillTitle"> About Me</span>
       <span>
-        Iam a skilled and passionate web designer with experience in creating
-        visually appeling and user-friendly websites. I have a strong
-        understanding of design and a keen eye for detail.I am proficient in
-        HTML,CSS,and JavaScript, as well as design software such as Adobe
-        Photoshop and Illustrator.
+        Fullstack Web Developer auf der Suche nach neuen Herausforderung
+        |HTML|CSS|JavaScript|React|Node.js
       </span>
       <div className="skillBars">
         <div className="skillBar">
-          <img src={UIDesign} alt="UIDesign" className="skillBarImg" />
           <div className="skillBarText">
-            <h2>UI/UX design</h2>
             <p>
-              {" "}
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              corrupti nemo, neque suscipit atque esse similique molestiae odio
-              nesciunt eos natus quae magnam, quasi ut facilis quod, architecto
-              consequuntur deserunt!{" "}
-            </p>
-          </div>
-        </div>
-        <div className="skillBar">
-          <img src={WebDesign} alt="WebDesign" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>Website design </h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              corrupti nemo, neque suscipit atque esse similique molestiae odio
-              nesciunt eos natus quae magnam, quasi ut facilis quod, architecto
-              consequuntur deserunt!
-            </p>
-          </div>
-        </div>
-        <div className="skillBar">
-          <img src={AppDesign} alt="AppDesign" className="skillBarImg" />
-          <div className="skillBarText">
-            <h2>App design </h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              corrupti nemo, neque suscipit atque esse similique molestiae odio
-              nesciunt eos natus quae magnam, quasi ut facilis quod, architecto
-              consequuntur deserunt!
+              Als leidenschaftlicher Webentwickler habe ich ein Jahr intensiver
+              Weiterbildung hinter mir und bin fest entschlossen, innovative und
+              benutzerfreundliche Webanwendungen zu gestalten. Meine Fähigkeiten
+              umfassen die Entwicklung responsiver und performanter Websites
+              unter Verwendung moderner Technologien wie HTML5, CSS3 und
+              JavaScript. Während meiner Weiterbildung habe ich auch fundierte
+              Kenntnisse in der Nutzung von Frameworks wie React und Vue.js
+              erworben. Ich bin bestrebt, elegante Lösungen zu finden und lege
+              großen Wert auf sauberen, gut dokumentierten Code. Durch meine
+              Weiterbildung habe ich Erfahrungen in der Zusammenarbeit in agilen
+              Teams gesammelt und bin mit gängigen Versionskontrollsystemen
+              vertraut.
             </p>
           </div>
         </div>

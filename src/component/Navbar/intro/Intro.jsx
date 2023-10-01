@@ -28,10 +28,12 @@ const Intro = () => {
         <h2 className="introName">Abderrazak</h2>
         <h2 className="introName1">Abderrazak</h2>
         <h3>Abdu</h3>
-        Front-End Developer
+        Fullstack Web-Developer
         <p className="introPara">
-          I code beautifully simple things, I love what I do,
-          <br /> and enjoy bringing ideas to life in the browser.
+          Meine Leidenschaft für Webentwicklung treibt mich dazu an,
+          <br /> immer auf dem neuesten Stand der Technik <br /> zu bleiben und
+          ständig nach Möglichkeiten <br /> zur Verbesserung meiner Fähigkeiten
+          zu suchen.
         </p>
         <NavLink to="/about">
           <button className="btn">
