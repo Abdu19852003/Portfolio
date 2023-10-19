@@ -13,12 +13,12 @@ const Works = () => {
   return (
     <section id="works">
       <h2 className="workstitle"> My Portfolio</h2>
-      <span className="worksDesc">
+      {/* <span className="worksDesc">
         I take pride in paying attention to the smallest details and making sure
         that my work is pixel perfect. i am excited to bring my skills and
         Experience to help businesses achieve their goals and create a strong
         online presence{" "}
-      </span>
+      </span> */}
       <div className="worksImgs">
         <div className="worksImgContainer">
           <Link to="https://github.com/kind-boys/Team-projects">
@@ -46,9 +46,9 @@ const Works = () => {
           <div className="worksImgText">Counter App</div>
         </div>
       </div>
-      <NavLink to="https://github.com/Abdu19852003?tab=repositories">
+      <Link to="https://github.com/Abdu19852003?tab=repositories">
         <button className="worksBtn">See More on GitHub</button>
-      </NavLink>
+      </Link>
     </section>
   );
 };
