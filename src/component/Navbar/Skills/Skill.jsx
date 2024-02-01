@@ -26,7 +26,14 @@ const Skill = () => {
               großen Wert auf sauberen, gut dokumentierten Code. Durch meine
               Weiterbildung habe ich Erfahrungen in der Zusammenarbeit in agilen
               Teams gesammelt und bin mit gängigen Versionskontrollsystemen
-              vertraut.
+              vertraut. Eine besondere Erfahrung war mein Engagement in einem
+              Teamprojekt, bei dem wir erfolgreich eine vollständige
+              Fullstack-App (EnergizeMe) entwickelt haben. Dabei konnte ich
+              meine Fähigkeiten in den Bereichen Node.js, MongoDB und Express
+              erfolgreich einsetzen. Diese Erfahrung hat nicht nur meine
+              technischen Kenntnisse vertieft, sondern auch meine Zusammenarbeit
+              in agilen Teams gestärkt. Zudem bin ich mit gängigen
+              Versionskontrollsystemen vertraut.
             </p>
           </div>
         </div>

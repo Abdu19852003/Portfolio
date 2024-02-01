@@ -4,6 +4,7 @@ import Github from "../../assets/github.png";
 import Indeed from "../../assets/indeed.png";
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [emailSent, setEmailSent] = useState(false);
@@ -78,8 +79,12 @@ const Contact = () => {
             Submit
           </button>
           <div className="links">
-            <img src={Indeed} alt="Indeed" className="link" />
+          <Link to="https://www.linkedin.com/in/abderrazak-benjiab-8521b2275/">
+            <img src={Indeed}  alt="Indeed" className="link" />
+            </Link>
+            <Link to="https://github.com/Abdu19852003">
             <img src={Github} alt="Github" className="link" />
+            </Link>
           </div>
         </form>
       </div>

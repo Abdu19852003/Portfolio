@@ -68,3 +68,31 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+///////////////////
+///////////////
+////////
+/////////////
+///////////////////
+///////////////////
+hallo zusammen ,
+ich bin Abdu
+
+zuerst möchte ich mich bei Iman , EDwin und Salem sehr bedanken .
+das Backend abdeckt die Benutzerregistrierung,Email verifizierung,benutzer Login und fitness profil verwaltung(Speicherung , Abruf und aktualisierung von Benutzerprofilinformationen in der Datenbank.)und dadurch werden die passende übungs videos für jeden user vorgezeigt
+Passwörter und andere vertrauliche Informationen werden sicher gehandhabt und gespeichert ,
+dafür hab ich MongoDb als Datenbank für sichere und effeizierte Speicherung von Benutzerdaten benutzt.
+
+vorgenomene Arbeit :
+Sicherheit der Benutzerdaten.
+Reflektion der aktuellen Situation: Wie viele Bewerbungen hast Du bereits verschickt? Mit welcher Phase des Bewerbungsprozesses hast Du derzeit
+Schwierigkeiten? Wenn Du den Bewerbungsprozess der letzten Wochen betrachtest, erkennst Du Verbesserungspotenzial (z. B. stärkerer Fokus auf das
+Anschreiben / vorab besser über das Unternehmen informieren / Bewerbung direkt über Company Website / etc.)?
+
+Überlege: Wie kannst du deinen vorherigen Job und deine neue Ausbildung kombinieren? Welche Schnittstellen gibt es? Welche Aufgaben/ Skills/
+verantwortungen sind gleich in beiden Bereichen? Nenne mindestens 4 Aspekte. 3) Definiere eine Strategie, um Jobs an diesen Schnittstellen zu finden.
+
+Schicke Deinem Job Coach die finale Version Deines Lebenslaufs, damit dieser freigegeben und du Mitglied des DCI-
+Talentpools werden kannst. Nach der Freigabe kann Dein Lebenslauf an unsere Partnerunternehmen weitergegeben werden. Falls Du heute
+Bewerbungen geschrieben hast, sende Deinem Job Coach bitte die Bewerbungsunterlagen, an denen Du heute gearbeitet hast. Zudem
+sende bitte auch deine Mail Vorlage

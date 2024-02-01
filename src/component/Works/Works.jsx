@@ -21,6 +21,12 @@ const Works = () => {
       </span> */}
       <div className="worksImgs">
         <div className="worksImgContainer">
+          <Link to="https://github.com/Raum7-Final-Project/EnergizeMe">
+            <img src={POrtfolio1} alt="1" className="worksImg" />
+          </Link>
+          <div className="worksImgText">Fitness App</div>
+        </div>
+        <div className="worksImgContainer">
           <Link to="https://github.com/kind-boys/Team-projects">
             <img src={POrtfolio4} alt="1" className="worksImg" />
           </Link>
@@ -38,12 +44,6 @@ const Works = () => {
             <img src={POrtfolio3} alt="1" className="worksImg" />
           </Link>
           <div className="worksImgText">Movie App</div>
-        </div>
-        <div className="worksImgContainer">
-          <Link to="https://github.com/Abdu19852003/react-counter">
-            <img src={POrtfolio1} alt="1" className="worksImg" />
-          </Link>
-          <div className="worksImgText">Counter App</div>
         </div>
       </div>
       <Link to="https://github.com/Abdu19852003?tab=repositories">
